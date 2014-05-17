@@ -9,7 +9,7 @@ Requisitos Mínimos
 
 Como usar?
 ----------
-Após ter instalado os programas acima, digite os comandos a seguir:
+Após instalar os programas acima, digite no Terminal/MS-DOS os comandos a seguir:
 
 ```shell
 git clone https://github.com/jonataa/matriz-distancia-google-api-exemplo.git
