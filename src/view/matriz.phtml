@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" >
+	<title>A API da Matriz de distâncias do Google</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/matriz.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="content">
+			<h1>Matriz de Distâncias - Google Maps</h1>
+			<div class="form">
+				<?php if (isset($errors) && !empty($errors)): ?>
+					<p class="bg-danger">
+						<?php foreach ($errors as $error): ?>
+							<?php echo $error . PHP_EOL; ?>
+						<?php endforeach; ?>
+					</p>
+				<?php endif; ?>
+				<form method="POST" role="form">
+					<div class="form-group">
+						<label for="origem">Cidade de Origem</label>
+						<input class="form-control" id="origem" name="origem" placeholder="Ex. Feira de Santana">
+					</div>
+					<div class="form-group">
+						<label for="destino">Cidade de Destino</label>
+						<input class="form-control" id="destino" name="destino" placeholder="Ex. São Paulo">
+					</div>
+					<input type="submit" value="Calcular" class="btn btn-success btn-lg" />					
+				</form>
+			</div>			
+			<?php if (isset($response)):  ?>
+			<div class="resultado">
+				<h2>Resultado:</h2>
+				<h4>De <span class="cidade"><?= $response['origem'][0]; ?></span> para <span class="cidade"><?= $response['destino'][0]; ?></span></h4>				
+				<h3>Distância: <?= $response['distancia-km-text']; ?></h3>	
+				<h3>Tempo de Carro: <?= $response['tempo']; ?></h3>			
+			</div>
+			<?php endif; ?>
+		</div>
+		<div class="footer">
+			Curso PHP &copy; 2014
+		</div>
+	</div>
+</body>
+</html>

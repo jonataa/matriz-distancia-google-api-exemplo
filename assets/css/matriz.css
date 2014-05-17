@@ -1,0 +1,14 @@
+.container {
+	text-align: center;	
+}
+.content .form {
+	width: 400px;
+	margin: 30px auto;
+}
+.resultado h3 {
+	color: green;
+}
+.footer {	
+	margin-top: 50px; 
+	font-size: 0.8em;
+}
