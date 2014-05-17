@@ -17,4 +17,4 @@ cd matriz-distancia-google-api-exemplo
 php -S localhost:9000
 ```
 
-Abrir o browser no seguinte endereço: localhost:9000
+Abra o browser no seguinte endereço: localhost:9000
