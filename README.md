@@ -12,7 +12,7 @@ Como usar?
 Após ter instalado os programas acima, digite os comandos a seguir:
 
 ```shell
-git https://github.com/jonataa/matriz-distancia-google-api-exemplo.git
+git clone https://github.com/jonataa/matriz-distancia-google-api-exemplo.git
 cd matriz-distancia-google-api-exemplo
 php -S localhost:9000
 ```
