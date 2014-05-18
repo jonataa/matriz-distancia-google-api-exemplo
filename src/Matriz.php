@@ -11,10 +11,10 @@ class Matriz
 	const FIELD_DISTANCIA_KM = 'distancia-km';
 	const FIELD_DISTANCIA_M  = 'distancia-m';
 	const FIELD_DISTANCIA_KM_TEXT = 'distancia-km-text';
-	const FIELD_TEMPO 			  = 'tempo';
+	const FIELD_TEMPO = 'tempo';
 
-	const API_URL 		   = 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=%s&destinations=%s&language=pt-BR&sensor=false';
-	const API_STATUS_OK    = 'OK';
+	const API_URL = 'http://maps.googleapis.com/maps/api/distancematrix/json?origins=%s&destinations=%s&language=pt-BR&sensor=false';
+	const API_STATUS_OK = 'OK';
 	const API_FIELD_STATUS = 'status';
 
 	private function checkParams($params)
